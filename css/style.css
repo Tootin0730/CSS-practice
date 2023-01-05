@@ -1,17 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Nanum+Pen+Script&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  font-size: 20px;
+}
+
 #container {
   border: 1px solid rgb(0, 0, 0);
   width: 600px;
+  padding: 20px;
   margin: 20px auto;
-  padding: 20px 40px;
 }
+
+
 
 h1 {
- display: inline-block;
- color: rgb(255, 255, 255);
- background-color: blueviolet;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 3em;
 }
 
-span {
-  font-weight: bold;
-  color: red;
+.accent {
+  font-size: 150%;
+  font-weight: 800;
+}
+
+.italic {
+  font-style: italic;
+}
+
+nav {
+  width: 400px;
+  margin: 50px 30px;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  border: 1px solid #222;
+  padding: 20px 40px;
+  margin: 10px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 400px;
+  caption-side: bottom;
+  border: 1px solid black; 
+
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+
+th {
+  background-color: #eee;
+}
+
+.use {
+  background-color: #eee;
 }
