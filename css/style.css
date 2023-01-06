@@ -1,87 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Nanum+Pen+Script&family=Open+Sans:wght@400;600&display=swap');
 
+
 body {
-  font-size: 20px;
+  background: url("../img/ice.jpg") left top no-repeat fixed; 
+  background-size: cover;
 }
 
-#container {
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 20px;
+
+
+#clip-border {
   width: 450px;
+  border: 10px dotted rgb(0, 0, 0);
   padding: 20px;
-  margin: 60px auto;
-  box-shadow: 0px 0px 60px 20px rgb(118, 118, 177);
+  background-clip: border-box;
+  background-color: rgb(251, 196, 114);
+  float: left;
 }
 
-
-
-h1 {
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 3em;
+#clip-padding {
+  width: 450px;
+  border: 10px dotted rgb(0, 0, 0);
+  padding: 20px;
+  background-clip: padding-box;
+  background-color: rgb(254, 166, 33);
+  float: left;
+}
+#clip-content {
+  width: 450px;
+  border: 10px dotted rgb(0, 0, 0);
+  padding: 20px;
+  background-clip: content-box;
+  background-color: rgb(242, 111, 18);
+  float: left;
 }
 
-.accent {
-  font-size: 150%;
-  font-weight: 800;
-}
-
-.italic {
+#italic {
   font-style: italic;
-}
-
-
-
-ul {
-  list-style: none;
-}
-
-li {
-  display: inline-block;
-  border: 1px solid #222;
-  padding: 20px;
-  margin: 0 20px;
-}
-
-
-
-table {
-  border-collapse: separate;
-  width: 400px;
-  caption-side: bottom;
-  border: 1px solid black; 
-
-}
-
-th, td {
-  text-align: center;
-  padding: 10px;
-  border: 1px solid black;
-
-}
-
-th {
-  background-color: #eee;
-}
-
-.use {
-  background-color: #eee;
-}
-
-#box1 {
-  background-color: #ffd800;
-  float: left;
-}
-
-#box2 {
-  background-color: #c9d8eb;
-  float: left;
-}
-
-#box3 {
-  background-color: #8ff297;
-}
-
-#box4 {
-  background-color: #e37a34;
-  clear: left;
 }
