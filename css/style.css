@@ -1,43 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Nanum+Pen+Script&family=Open+Sans:wght@400;600&display=swap');
 
-div {
-  display: inline-block;
-  width: 500px;
-  height: 300px;
-  border-radius: 10px;
+.container {
+  width: 960px;
+  margin : 0 auto;
+}
+.navi{
+  width:960px;
+  height:60px;
+  padding-bottom:10px;
+  border-bottom:2px solid #ccc;
 }
 
-.grad {
-  background: linear-gradient(to right bottom, blue, white);
+.navi ul{
+  list-style: none;
+  padding-top:10px; 
+  padding-bottom:5px;
+}
+.navi ul li {
+  display:inline-block;
+  width:150px;
+  padding:10px;   
+}
+.navi a:link, .navi a:visited {
+  font-size:14px;
+  padding: 10px; 
+  text-decoration: none;  /* 밑줄 없음 */
+
+}
+.navi a:hover,  .navi a:focus {
+  background-color:#222;  /* 배경색 */
+  color:#fff;  /* 글자색 */
 }
 
-.grad1 {
-  background: linear-gradient(45deg, #f00, #fff);
+.navi a:active {
+  background-color:#f00;  /* 배경색 */
+}
+.contents {
+  margin:30px auto;
+  width:400px;
+  padding:20px;
+  border:1px solid #222;
+  border-radius:5px;        
+}
+#intro:target {
+  background-color:#0069e0;  /* 배경색 - 파란색 */
+  color:#fff;  /* 글자색 - 흰색 */
+}
+#room:target {
+  background-color:#ff9844;  /* 배경색 - 주황색 */
+}
+#reservation:target{
+  background-color:#fff8dc;  /* 배경색 - 베이지색 */
 }
 
-.grad2 {
-  background: linear-gradient(to bottom, rgb(255, 255, 0), rgb(146, 249, 141) 50%, rgb(255, 255, 0));
+
+fieldset {
+  border: 1px solid black;
 }
 
-.grad3 {
-  background: radial-gradient(rgb(251, 2, 255), rgb(255, 255, 255) 50%, rgb(255, 0, 225));
+legend {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 30px;
 }
 
-.grad4 {
-  background: radial-gradient(circle, rgb(255, 255, 255), rgb(16, 164, 244) 10%, rgb(0, 255, 187)) 60%;
+ul li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
 }
 
-.grad5 {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 20% 20%, rgb(255, 255, 255), rgb(16, 164, 244) 50%, rgb(8, 134, 245));
-}
-
-.grad6 {
-  background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
-}
-
-.grad7 {
-  background: repeating-radial-gradient(green, green 20px, skyblue 20px, skyblue 40px);
+input:checked + label {
+color: red;
+font-weight: bold;
 }
